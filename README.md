@@ -1,4 +1,4 @@
-# Trendyol tarzı Next.js mağaza
+# Trendyol mağaza
 
 Türkçe, mobil uyumlu alışveriş arayüzü. Next.js App Router, React, Tailwind CSS ve Lucide ikonları kullanılır.
 
