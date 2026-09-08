@@ -1,25 +1,38 @@
-# Trendyol mağaza
+# Trendyol Storefront
 
-Türkçe, mobil uyumlu alışveriş arayüzü. Next.js App Router, React, Tailwind CSS ve Lucide ikonları kullanılır.
+A responsive shopping demo with a Turkish interface, product discovery, favorites, and a persistent shopping cart.
 
-## Çalıştırma
+## Getting started
 
 ```sh
 npm install
 npm run dev
 ```
 
-Windows PowerShell betik kısıtlaması varsa `npm` yerine `npm.cmd` kullanın. Adres: http://localhost:3000
+Open http://localhost:3000. If Windows PowerShell blocks npm scripts, use `npm.cmd` instead of `npm`.
+
+To build and run the production version:
 
 ```sh
 npm run build
 npm start
 ```
 
-Ürün arama, kategori filtreleme, fiyat sıralama, favoriler ve adet kontrollü sepet çalışır. Favoriler ve sepet localStorage ile tarayıcıda saklanır. Kategoriye ait örnek ürün yoksa boş sonuç ekranı gösterilir.
+## Features
 
-Bu bir ön yüz demosudur. Ürünler ve kampanyalar örnektir; ödeme, üyelik, satıcı ve sipariş servisi bağlı değildir. Fotoğraflar Unsplash, yazı tipleri Google Fonts üzerinden yüklenir ve internet bağlantısı gerektirir.
+- Search products, filter by category, and sort by price.
+- Save favorite products and manage cart quantities.
+- Keep favorites and cart contents in the browser using localStorage.
+- Browse responsive category menus, promotional sections, and product cards.
+- Display an empty state when no sample products match the selected category or search.
 
-Next.js uygulaması `app/` dizinindedir. Sayfa ve Tailwind sınıfları `app/page.js`, kök düzen `app/layout.js` içindedir. `app/globals.css` yalnızca Tailwind girişini, yazı tiplerini ve ortak temel stilleri içerir. Tailwind, `postcss.config.mjs` üzerinden derlenir.
+## Project structure
 
-Kurulum: [Tailwind CSS resmi Next.js kılavuzu](https://tailwindcss.com/docs/installation/framework-guides/nextjs).
+- `app/page.js`: storefront, interactions, and styling utilities.
+- `app/layout.js`: root layout and page metadata.
+- `app/globals.css`: stylesheet entry point, fonts, and shared base styles.
+- `postcss.config.mjs`: stylesheet build configuration.
+
+## Demo limitations
+
+Products and promotions are sample content. Payment, account, seller, and order services are not connected. Photos load from Unsplash and fonts load from Google Fonts, so these assets require an internet connection.
