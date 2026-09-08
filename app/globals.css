@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* Global defaults; component styles live in Tailwind className utilities. */
+@layer base {
+:root{--orange:#f26924;--ink:#262723;--muted:#81817b;--line:#eeeee9}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:#fff;font-family:'DM Sans',Arial,sans-serif;font-size:13px}
+button{font:inherit}
+input{font:inherit}
+select{font:inherit}
+button{-webkit-tap-highlight-color:transparent}
+a{-webkit-tap-highlight-color:transparent}
+input{-webkit-tap-highlight-color:transparent}
+select{-webkit-tap-highlight-color:transparent}
+button{cursor:pointer;border:0;background:none;color:inherit}
+button:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+a:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+select:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+a{text-decoration:none;color:inherit}
+button{transition:background .18s,color .18s,transform .18s}
+img{display:block;width:100%;height:100%;object-fit:cover}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+}
